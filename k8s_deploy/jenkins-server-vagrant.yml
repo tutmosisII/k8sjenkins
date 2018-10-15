@@ -27,7 +27,7 @@
             volumeMounts:
               -
                 name: "jenkins-data"
-                mountPath: "/var/jenkins_home"
+                mountPath: "/var/jenkins"
             livenessProbe:
               httpGet:
                 path: /
