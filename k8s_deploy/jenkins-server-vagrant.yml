@@ -28,7 +28,7 @@
             volumeMounts:
               -
                 name: "jenkins-data"
-                mountPath: "/var/jenkins_home"
+                mountPath: "/var/jenkins"
             livenessProbe:
               tcpSocket:
                 port: 8080
