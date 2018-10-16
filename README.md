@@ -24,7 +24,7 @@ kubectl get rc
 
 ## 2) Creando el Servicio
 
-kubectl create -f service-vagrant.yml
+kubectl create -f k8s_services/service-vagrant.yml
 
 Puede hacer verificación de esto usando:
 
@@ -45,3 +45,5 @@ kubectl describe services/jenkins
 [Plugin Jenkins k8s](https://github.com/jenkinsci/kubernetes-plugin)
 
 [X](https://zwischenzugs.com/2015/03/19/scale-your-jenkins-compute-with-your-dev-team-use-docker-and-jenkins-swarm/)
+
+[Problmes with slave pods](https://stackoverflow.com/questions/49635916/jenkins-kubernetes-plugin-failing-to-provision-jnlp-slave-pods)

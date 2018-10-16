@@ -30,8 +30,7 @@
                 name: "jenkins-data"
                 mountPath: "/var/jenkins_home"
             livenessProbe:
-              httpGet:
-                path: /
+              tcpSocket:
                 port: 8080
               initialDelaySeconds: 60
               timeoutSeconds: 5
