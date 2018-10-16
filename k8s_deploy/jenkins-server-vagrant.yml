@@ -19,6 +19,7 @@
           -
             name: "jenkins"
             image: "tutmosisii/jenkins-swarm"
+            imagePullPolicy: Always
             ports:
               -
                 containerPort: 8080
@@ -39,3 +40,4 @@
             name: "jenkins-data"
             hostPath:
               path: "/var/jenkins"
+              type: DirectoryOrCreate
